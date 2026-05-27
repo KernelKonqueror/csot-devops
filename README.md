@@ -80,18 +80,6 @@ Every week you have **two deliverables**. They are graded independently and have
 | 📦 **Mini-project** (manual) | your **own public GitHub repo**    | fill the **submission form** (link in your cohort group) | manual mentor review                                                      | `[/projects/week-NN/README.md](./projects/week-01/README.md)` |
 
 
-### Week-by-week submission paths
-
-
-| Week | Contest folder                                  | Mini-project guide                                            | Submission form          |
-| ---- | ----------------------------------------------- | ------------------------------------------------------------- | ------------------------ |
-| 1    | `[/submission/week-01/](./submission/week-01/)` | `[/projects/week-01/README.md](./projects/week-01/README.md)` | *shared in cohort group* |
-| 2    | `/submission/week-02/` *(coming soon)*          | `/projects/week-02/README.md` *(coming soon)*                 | —                        |
-| 3    | `/submission/week-03/` *(coming soon)*          | `/projects/week-03/README.md` *(coming soon)*                 | —                        |
-| 4    | `/submission/week-04/` *(coming soon)*          | `/projects/week-04/README.md` *(coming soon)*                 | —                        |
-| 5    | `/submission/week-05/` *(coming soon)*          | `/projects/week-05/README.md` *(coming soon)*                 | —                        |
-| 6    | `/submission/week-06/` *(coming soon)*          | `/projects/week-06/README.md` *(coming soon)*                 | —                        |
-
 
 ### Rules of the fork model
 
