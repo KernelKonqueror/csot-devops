@@ -42,7 +42,7 @@ git clone https://github.com/<your-username>/csot-devops.git
 cd csot-devops
 
 # 3. Add the original repo as "upstream" so you can pull new weekly content:
-git remote add upstream https://github.com/DevClub-IITD/csot-devops.git
+git remote add upstream https://github.com/3x3cu73/csot-devops.git
 git remote -v   # should show: origin = your fork, upstream = the original
 
 # 4. Each Monday, pull the new week's content from upstream into your fork:
