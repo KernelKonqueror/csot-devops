@@ -1227,7 +1227,7 @@ docker compose up -d
 
 ## Weekly Mini-Project — Dockerized App Stack
 
-> **Submission:** GitHub repo link (manually graded, 50 pts) — details in cohort instructions.
+> **Submission:** GitHub repo link, submitted on the [contest portal](https://csot-devops.devclub.in/submission) (manually graded, 50 pts) — guide: [`projects/week-02/README.md`](../projects/week-02/README.md).
 
 ### Required contents
 

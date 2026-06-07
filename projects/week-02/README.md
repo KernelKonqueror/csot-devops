@@ -11,7 +11,7 @@
 > |---|---|---|
 > | **What** | 12 Docker/Compose incident tasks | Dockerized App Stack repo |
 > | **Points** | 200 | 50 |
-> | **How submitted** | `csot` CLI / `csot challenge` → [csot-devops.devclub.in](https://csot-devops.devclub.in) | **Submission form** (link shared in your cohort group) |
+> | **How submitted** | `csot` CLI / `csot challenge` → [csot-devops.devclub.in](https://csot-devops.devclub.in) | [contest portal → **Mini-project submission**](https://csot-devops.devclub.in/submission) (paste repo URL) |
 > | **Grading** | Automatic, in a Docker sandbox | Manual review by mentors |
 > | **Guide** | [`/submission/README.md`](../../submission/README.md) | You're reading it |
 
@@ -43,55 +43,43 @@ Full required behavior, the file list, and the **grading rubric (50 pts)** live 
 - [ ] `.dockerignore` committed; `.env` **not** committed (check `.gitignore`)
 - [ ] `trufflehog git file://. --only-verified` → **clean** (no verified secrets in history)
 - [ ] `README.md` includes a 1-line "How to run" and a screenshot of the running stack
-- [ ] You know the **exact commit SHA** you want graded (`git rev-parse HEAD` in the project repo)
+- [ ] Latest work is **pushed to GitHub** (the portal reads your repo's current commit)
 
 ---
 
-## 3. How to submit (form flow)
+## 3. How to submit (on the contest portal)
 
-We submit Week 2 mini-projects via a **submission form**. The form link is shared in your cohort group on Discord / WhatsApp — it is **not posted in this public repo**.
+Week 2 mini-projects are submitted **directly on the contest portal** — there is no separate form. You paste your public repo URL and the portal verifies it and records the commit.
 
 > **Prerequisite:** you've already forked this repo per the root README's **[How to Participate](../../README.md#-how-to-participate-read-this-once-then-refer-back)** section. Your Dockerized App Stack lives in **its own separate public GitHub repo** — *not* inside this fork.
 
 ### Step-by-step
 
 ```bash
-# 1. Build your stack in its own dedicated public repo, e.g.:
+# 1. Build your stack in its own dedicated PUBLIC repo, e.g.:
 #    github.com/<your-github-username>/dockerized-app-week02
 
-# 2. When you're ready to submit, grab the commit SHA you want graded:
+# 2. Commit and PUSH your latest work to GitHub:
 cd ~/path/to/dockerized-app-week02
-git rev-parse HEAD
-# → 9f3c1a8b...   ← copy this
-
-# 3. Make sure the repo is PUBLIC and the README renders correctly on GitHub.
-
-# 4. Open the submission form (link in your cohort Discord / WhatsApp group)
-#    and fill in the fields listed below.
+git add -A && git commit -m "week-02 submission" && git push
 ```
 
-### What the form will ask for
-
-Have these ready **before** you open the form, so you fill it out in one go:
+3. Go to the **contest portal** → **Mini-project submission**:
+   **[csot-devops.devclub.in/submission](https://csot-devops.devclub.in/submission)** (sign in with your DevClub login, same as the contest).
+4. Select **Week 2**, then fill the two fields and click **Submit**:
 
 | Field | Example | Notes |
 |---|---|---|
-| Name | `Jane Doe` | As registered with DevClub |
-| DevClub email | `jane@example.com` | The email tied to your DevClub login |
-| GitHub username | `janedoe` | Without the `@` |
-| Project repo URL (public) | `https://github.com/janedoe/dockerized-app-week02` | Must be **public** at grading time |
-| Commit SHA being submitted | `9f3c1a8` | Short or full SHA, from `git rev-parse HEAD` |
-| Project chosen | `Default (Dockerized App Stack)` or alternative name | See [Alternative Mini-Project Ideas](../../content/week-02-docker-compose-debugging.md#alternative-mini-project-ideas) |
-| What you built (2–4 sentences) | "Flask API + Postgres + Redis via compose, multi-stage non-root image, named volume for the DB, healthchecks on app and db." | Plain text, brief |
-| Anything for the reviewer | Edge cases, known issues, what you'd do with more time | Optional but encouraged |
+| **GitHub repository URL** | `https://github.com/janedoe/dockerized-app-week02` | Must be **public**. The portal checks it's reachable. |
+| **Assignment folder** | `.` | Use `.` if the project is at the repo root; otherwise the subfolder path. |
 
-After you submit, a mentor will review within ~3 days and post your score in the cohort group / on the leaderboard.
+The portal automatically picks up your repo's **latest commit** on submit and shows it back to you (with a warning if you later push newer commits — just resubmit to update). A mentor reviews afterwards and your score appears on the leaderboard.
 
 ### Important rules
 
-- You may **re-submit** the form before the deadline — the **latest submission** before deadline is the one graded. Push fixes first, then re-submit with the new SHA.
-- **Do not change the repo's visibility to private** between submission and grading — that breaks review and forfeits your points.
-- **Do not force-push or rewrite history** after submitting — the grader checks out the exact SHA you submitted.
+- You may **resubmit** any time before the deadline — the latest submission is the one graded. Push your fix, then hit **Update submission** on the portal so it captures the new commit.
+- **Keep the repo public** between submission and grading — a private repo can't be reviewed and forfeits your points.
+- **Don't force-push / rewrite history** after submitting — the recorded commit must still exist in your repo's history.
 
 ---
 
@@ -117,24 +105,24 @@ csot-devops/                                       ← upstream (this repo) — 
         └── README.md                              ← (you are here) mini-project submission guide
 
 github.com/<you>/dockerized-app-week02/            ← YOUR project repo (separate, public)
-                                                   ← URL goes into the submission form
+                                                   ← URL goes into the portal's Mini-project submission page
 ```
 
 ---
 
 ## 6. FAQ
 
-**Q. Where is the submission form link?**
-In your cohort group (Discord / WhatsApp), pinned by an organizer. It's intentionally not posted here so only registered participants can submit.
+**Q. Where do I submit?**
+On the contest portal: **[csot-devops.devclub.in/submission](https://csot-devops.devclub.in/submission)** → pick Week 2 → paste your public repo URL. Sign in with the same DevClub login you use for the contest. There is no separate Google form.
 
 **Q. Can my project just live inside my fork of this repo (in `projects/week-02/`)?**
 Technically yes, but it's a bad portfolio piece. Create a **dedicated public repo** for the stack and submit *that* URL. Your fork is the workspace; the dedicated repo is the deliverable.
 
-**Q. Can I submit the contest tasks via this form?**
+**Q. Can I submit the contest tasks on the same page?**
 No. Contest tasks go through the `csot` CLI / `csot challenge` — see [`/submission/README.md`](../../submission/README.md). They are graded automatically and separately.
 
 **Q. Can I pick an Alternative Mini-Project instead?**
 Yes — see [Alternative Mini-Project Ideas](../../content/week-02-docker-compose-debugging.md#alternative-mini-project-ideas) in the Week 2 guide. Note which one you picked in the form's *"Project chosen"* field; the same 50-point rubric applies (criteria mapped sensibly to your chosen project).
 
 **Q. I submitted, then noticed a bug. Can I fix it?**
-Yes — push the fix to your project repo, then re-submit the form with the new commit SHA. The latest submission before the deadline is the one graded.
+Yes — push the fix to your project repo, then hit **Update submission** on the [portal](https://csot-devops.devclub.in/submission) so it captures the new commit. The latest submission before the deadline is the one graded.

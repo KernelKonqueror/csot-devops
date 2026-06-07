@@ -1738,7 +1738,7 @@ Cloudflare gives you free HTTPS, no certbot needed.
 
 ## Weekly Mini-Project — DevOps Toolkit Repo
 
-> **Submission deadline: Sunday 11:59 PM (IST)** · **How to submit:** see **[`projects/week-01/README.md`](../projects/week-01/README.md)** (submission form shared in cohort group, manually graded, 50 pts)
+> **Submission deadline: Sunday 11:59 PM (IST)** · **How to submit:** see **[`projects/week-01/README.md`](../projects/week-01/README.md)** (submitted on the [contest portal](https://csot-devops.devclub.in/submission), manually graded, 50 pts)
 
 This project has two tracks. 
 

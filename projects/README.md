@@ -1,13 +1,13 @@
 # Weekly Mini-Project submission guides
 
-This folder contains the **submission guides** for each week's mini-project (the manually-graded portfolio pieces). Each guide explains what to build, the checklist, and how to fill the submission form.
+This folder contains the **submission guides** for each week's mini-project (the manually-graded portfolio pieces). Each guide explains what to build, the checklist, and how to submit it on the contest portal.
 
 Two different things land each week — don't confuse them:
 
 | | Contest (autograded) | Mini-Project (this folder) |
 |---|---|---|
 | **What** | Per-week shell/sysadmin/DevOps tasks | The week's portfolio project |
-| **How** | `csot` CLI → [csot-devops.devclub.in](https://csot-devops.devclub.in) | **Submission form** (link in cohort group) |
+| **How** | `csot` CLI → [csot-devops.devclub.in](https://csot-devops.devclub.in) | [contest portal → **Mini-project submission**](https://csot-devops.devclub.in/submission) |
 | **Grading** | Automatic, in a Docker sandbox | Manual review by mentors |
 | **Guide** | [`/submission/README.md`](../submission/README.md) | The `README.md` of the relevant week below |
 
@@ -31,7 +31,7 @@ Two different things land each week — don't confuse them:
 
 1. **Fork** this upstream repo (one-time setup — see root README's *How to Participate*).
 2. **Build** the week's project in **its own dedicated public GitHub repo** (better portfolio piece than burying it inside your fork).
-3. **Submit** by filling the **submission form** for that week — link is shared in your cohort group (Discord / WhatsApp), not in this public repo.
-4. Mentor reviews → score posted in cohort group / on the leaderboard.
+3. **Submit** on the **contest portal** — open the [Mini-project submission page](https://csot-devops.devclub.in/submission), pick the week, and paste your public repo URL.
+4. Mentor reviews → score posted on the leaderboard.
 
 Full step-by-step in each week's submission guide.

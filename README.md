@@ -28,7 +28,7 @@ Read the week's guide for teaching material, then follow the global workflow bel
 **Fork it once at the start of the program** and do **all** your work — contest code and mini-projects — in your own fork. Each week's submissions go through two channels:
 
 - **Contest** → the `csot` CLI (uploads directly to the autograder).
-- **Mini-project** → a **submission form** (link will be shared in whatsapp).
+- **Mini-project** → submitted on the **contest portal** ([Mini-project submission page](https://csot-devops.devclub.in/submission) — paste your public repo URL).
 
 ### Step 0 — One-time setup: fork & clone
 
@@ -52,7 +52,7 @@ git merge upstream/main          # or:  git rebase upstream/main
 git push origin main             # update your fork on GitHub
 ```
 
-> The fork is **your single workspace** for the entire 6-week program — contest attempts, mini-project work-in-progress, scratch scripts, notes. You never push anything back to this upstream repo. Mini-project deliverables are submitted via a **form** (link shared in your cohort group); the form asks for your public project repo URL.
+> The fork is **your single workspace** for the entire 6-week program — contest attempts, mini-project work-in-progress, scratch scripts, notes. You never push anything back to this upstream repo. Mini-project deliverables are submitted on the **contest portal** — open the [Mini-project submission page](https://csot-devops.devclub.in/submission) and paste your public project repo URL.
 
 ### Where your work goes inside your fork
 
@@ -77,8 +77,7 @@ Every week you have **two deliverables**. They are graded independently and have
 | Deliverable                  | Where you write code               | How you submit                                           | Where graded                                                              | Guide                                                         |
 | ---------------------------- | ---------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | 🏆 **Contest** (autograded)  | `submission/week-NN/` in your fork | `csot submit ./submission/week-NN`                       | [csot-devops.devclub.in](https://csot-devops.devclub.in) (Docker sandbox) | `[/submission/README.md](./submission/README.md)`             |
-| 📦 **Mini-project** (manual) | your **own public GitHub repo**    | fill the **submission form** (link in your cohort group) | manual mentor review                                                      | `[/projects/week-NN/README.md](./projects/week-01/README.md)` |
-
+| 📦 **Mini-project** (manual) | your **own public GitHub repo**    | [contest portal → **Mini-project submission**](https://csot-devops.devclub.in/submission) (paste repo URL) | manual mentor review                                                      | `[/projects/week-NN/README.md](./projects/week-01/README.md)` |
 
 
 ### Rules of the fork model
@@ -93,7 +92,7 @@ Every week you have **two deliverables**. They are graded independently and have
 
 ### Week 1 — Linux, Networking, Git & Sysadmin Foundations
 
- **[Read Week 1 content](./content/week-01-linux-networking-git.md)** · 🏆 **[Week 1 contest](https://csot-devops.devclub.in/contest/week-01)** (12 tasks, **100 pts**, autograded — [contest submit guide](./submission/README.md)) · 📦 **[Mini-project](./projects/week-01/README.md)** (50 pts, form-submitted)
+ **[Read Week 1 content](./content/week-01-linux-networking-git.md)** · 🏆 **[Week 1 contest](https://csot-devops.devclub.in/contest/week-01)** (12 tasks, **100 pts**, autograded — [contest submit guide](./submission/README.md)) · 📦 **[Mini-project](./projects/week-01/README.md)** (50 pts, [submitted on the portal](https://csot-devops.devclub.in/submission))
 
 Master the OS and the network — the bedrock everything else stacks on. Topics covered:
 
@@ -108,7 +107,7 @@ Master the OS and the network — the bedrock everything else stacks on. Topics 
 
 ### Week 2 — Containers, Compose & Image Security
 
- **[Read Week 2 content](./content/week-02-docker-compose-debugging.md)** · 🏆 **[Week 2 contest](https://csot-devops.devclub.in/contest/week-02)** (12 tasks, **200 pts**, autograded — [contest submit guide](./submission/README.md)) · 📦 **[Mini-project](./projects/week-02/README.md)** (50 pts, form-submitted)
+ **[Read Week 2 content](./content/week-02-docker-compose-debugging.md)** · 🏆 **[Week 2 contest](https://csot-devops.devclub.in/contest/week-02)** (12 tasks, **200 pts**, autograded — [contest submit guide](./submission/README.md)) · 📦 **[Mini-project](./projects/week-02/README.md)** (50 pts, [submitted on the portal](https://csot-devops.devclub.in/submission))
 
 Package once, run anywhere — securely and slim, then debug it when it breaks. Topics covered:
 
@@ -236,7 +235,7 @@ For each week (Week 1 first):
 1. **Monday — sync your fork** with upstream (`git fetch upstream && git merge upstream/main && git push`) to pull the new week's content.
 2. **Mon–Wed — read** the matching `content/week-0N-*.md` guide; complete the modules and builds.
 3. **Wed–Sat — contest**: solve the 12 tasks in `submission/week-NN/` of your fork; submit incrementally with `csot submit . -t NN` as you go. (Guide: `[/submission/README.md](./submission/README.md)`)
-4. **Thu–Sun — mini-project**: build your DevOps Toolkit / weekly project in its **own public GitHub repo**, then submit the repo URL via the **submission form** shared in your cohort group. (Guide: `[/projects/week-01/README.md](./projects/week-01/README.md)`)
+4. **Thu–Sun — mini-project**: build your DevOps Toolkit / weekly project in its **own public GitHub repo**, then submit the repo URL on the **contest portal** ([Mini-project submission page](https://csot-devops.devclub.in/submission)). (Guide: `[/projects/week-01/README.md](./projects/week-01/README.md)`)
 5. **Sunday 11:59 PM IST — deadline** for both deliverables.
 
 First-time setup (fork + clone + add upstream): see **[How to Participate](#-how-to-participate-read-this-once-then-refer-back)** above.
